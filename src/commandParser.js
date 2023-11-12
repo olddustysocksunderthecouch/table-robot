@@ -1,7 +1,8 @@
 export const parseCommand = (robot, table, command) => {
   const parts = command.split(' ')
   const cmd = parts[0]
-
+  const newX = robot.x
+  const newY = robot.y
   switch (cmd) {
     case 'PLACE':
       const [x, y, facing] = parts[1].split(',')
@@ -9,10 +10,15 @@ export const parseCommand = (robot, table, command) => {
         robot.place(parseInt(x), parseInt(y), facing)
       }
       break
-    case 'MOVE':
-      const newX = robot.x
-      const newY = robot.y
-      robot.move()
+    case 'FORWARD':
+      robot.forward()
+      if (!table.isValidPosition(robot.x, robot.y)) {
+        robot.x = newX
+        robot.y = newY
+      }
+      break
+    case 'REVERSE':
+      robot.reverse()
       if (!table.isValidPosition(robot.x, robot.y)) {
         robot.x = newX
         robot.y = newY
