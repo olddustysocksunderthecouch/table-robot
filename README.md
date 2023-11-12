@@ -6,14 +6,14 @@ This project focuses on creating a simulation where a toy robot moves on a 5x5 u
 
 ### Prerequisites
 
-You need to have Node.js and npm installed on your local machine. You can download Node.js [here](https://nodejs.org/en/download/) and npm is included in the installation.
+You need to have Node.js and npm installed on your local machine. You are encouraged to use [NVM](https://github.com/nvm-sh/nvm) to manage your Node versions.
 
 ### Installing
 
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/table-robot.git
+git clone https://github.com/olddustysocksunderthecouch/table-robot.git
 ```
 
 2. Navigate to the project directory
@@ -31,7 +31,7 @@ npm install
 4. Run the code
 
 ```
-node 
+npm run start
 ```
 
 ## Running the tests
@@ -42,9 +42,7 @@ Run the Jest unit tests with the following command:
 npm test
 ```
 
-## Built With
 
-- [Jest](https://jestjs.io/) - JavaScript Testing Framework
 
 ## License
 
