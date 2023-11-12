@@ -12,7 +12,7 @@ export class Robot {
     this.facing = facing
   }
 
-  move() {
+  forward() {
     switch (this.facing) {
       case 'NORTH':
         this.y += 1
@@ -25,6 +25,23 @@ export class Robot {
         break
       case 'WEST':
         this.x -= 1
+        break
+    }
+  }
+
+  reverse() {
+    switch (this.facing) {
+      case 'NORTH':
+        this.y -= 1
+        break
+      case 'SOUTH':
+        this.y += 1
+        break
+      case 'EAST':
+        this.x -= 1
+        break
+      case 'WEST':
+        this.x += 1
         break
     }
   }

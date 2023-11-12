@@ -27,7 +27,7 @@ describe('parseCommand', () => {
 
   it('should move the robot one unit forward', () => {
     parseCommand(robot, table, 'PLACE 0,0,NORTH')
-    parseCommand(robot, table, 'MOVE')
+    parseCommand(robot, table, 'FORWARD')
     expect(robot.x).toBe(0)
     expect(robot.y).toBe(1)
     expect(robot.facing).toBe('NORTH')
@@ -35,7 +35,7 @@ describe('parseCommand', () => {
 
   it('should not move the robot if it would fall off the table', () => {
     parseCommand(robot, table, 'PLACE 0,0,SOUTH')
-    parseCommand(robot, table, 'MOVE')
+    parseCommand(robot, table, 'FORWARD')
     expect(robot.x).toBe(0)
     expect(robot.y).toBe(0)
     expect(robot.facing).toBe('SOUTH')

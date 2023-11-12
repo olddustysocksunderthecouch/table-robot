@@ -1,5 +1,5 @@
 export const renderRobotOnTable = (robot, table) => {
-  let boardRepresentation = ''
+  let boardRepresentation = '\n'
 
   const arrows = {
     NORTH: '↑',

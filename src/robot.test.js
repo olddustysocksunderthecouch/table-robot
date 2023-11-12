@@ -16,10 +16,10 @@ describe('Robot', () => {
     })
   })
 
-  describe('move', () => {
+  describe('forward', () => {
     it('should move the robot one unit north when facing north', () => {
       robot.place(0, 0, 'NORTH')
-      robot.move()
+      robot.forward()
       expect(robot.x).toEqual(0)
       expect(robot.y).toEqual(1)
       expect(robot.facing).toEqual('NORTH')
@@ -27,7 +27,7 @@ describe('Robot', () => {
 
     it('should move the robot one unit south when facing south', () => {
       robot.place(0, 1, 'SOUTH')
-      robot.move()
+      robot.forward()
       expect(robot.x).toEqual(0)
       expect(robot.y).toEqual(0)
       expect(robot.facing).toEqual('SOUTH')
@@ -35,7 +35,7 @@ describe('Robot', () => {
 
     it('should move the robot one unit east when facing east', () => {
       robot.place(0, 0, 'EAST')
-      robot.move()
+      robot.forward()
       expect(robot.x).toEqual(1)
       expect(robot.y).toEqual(0)
       expect(robot.facing).toEqual('EAST')
@@ -43,7 +43,7 @@ describe('Robot', () => {
 
     it('should move the robot one unit west when facing west', () => {
       robot.place(1, 0, 'WEST')
-      robot.move()
+      robot.forward()
       expect(robot.x).toEqual(0)
       expect(robot.y).toEqual(0)
       expect(robot.facing).toEqual('WEST')
