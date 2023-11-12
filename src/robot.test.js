@@ -1,4 +1,4 @@
-const Robot = require('./robot')
+import { Robot } from './robot'
 
 describe('Robot', () => {
   let robot

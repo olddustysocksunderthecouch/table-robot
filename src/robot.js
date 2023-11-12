@@ -1,4 +1,4 @@
-class Robot {
+export class Robot {
   constructor() {
     this.x = null
     this.y = null
@@ -43,5 +43,3 @@ class Robot {
     return `${this.x},${this.y},${this.facing}`
   }
 }
-
-module.exports = Robot

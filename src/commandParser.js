@@ -1,4 +1,4 @@
-function parseCommand(robot, table, command) {
+export const parseCommand = (robot, table, command) => {
   const parts = command.split(' ')
   const cmd = parts[0]
 
@@ -27,5 +27,3 @@ function parseCommand(robot, table, command) {
       break
   }
 }
-
-module.exports = parseCommand

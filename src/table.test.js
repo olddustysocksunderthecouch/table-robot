@@ -1,4 +1,4 @@
-const Table = require('./table').default
+import { Table } from './table'
 
 describe('Table', () => {
   describe('isValidPosition', () => {

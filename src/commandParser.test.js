@@ -1,6 +1,6 @@
-const Robot = require('./robot')
-const Table = require('./table')
-const parseCommand = require('./commandParser')
+import { Robot } from './robot'
+import { Table } from './table'
+import { parseCommand } from './commandParser'
 
 describe('parseCommand', () => {
   let robot
