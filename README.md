@@ -42,8 +42,15 @@ Run the Jest unit tests with the following command:
 npm test
 ```
 
+## Releases
+Please note that there are multiple versions of this project. Each version has been tagged.
 
+V1.0.0
+The basic functionality based on the requirements
 
-## License
+V1.1.0
+Introduces a visual ASCII UI in the terminal. 
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+V1.2.0 
+Unreleased - see [this PR](https://github.com/olddustysocksunderthecouch/table-robot/pull/1) for more details
+
